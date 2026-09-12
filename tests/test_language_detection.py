@@ -26,7 +26,8 @@ def test_language_detection_new_supported_languages():
         "ro": "Bună ziua, ce mai faci? Acesta este un test în limba română.",
         "hu": "Jó napot kívánok, hogy vagy? Ez egy teszt magyar nyelven.",
         "tr": "Merhaba, nasılsın? Bu Türkçe dilinde bir testtir.",
-        "el": "Γεια σας, πώς είστε σήμερα; Αυτή είναι μια δοκιμή στα ελληνικά."
+        "el": "Γεια σας, πώς είστε σήμερα; Αυτή είναι μια δοκιμή στα ελληνικά.",
+        "vi": "Xin chào, hôm nay bạn khỏe không? Đây là một bài kiểm tra tiếng Việt."
     }
     for code, text in samples.items():
         res = detect_language_heuristics(text, expected_language=code)
@@ -45,6 +46,7 @@ def test_language_normalization():
         ("Serbian", "sr"), ("српски", "sr"), ("srpski", "sr"), ("srp", "sr"), ("scc", "sr"), ("sr", "sr"),
         ("Croatian", "hr"), ("hrvatski", "hr"), ("hrv", "hr"), ("scr", "hr"), ("hr", "hr"),
         ("Bosnian", "bs"), ("bosanski", "bs"), ("bos", "bs"), ("bs", "bs"),
+        ("Vietnamese", "vi"), ("tiếng việt", "vi"), ("vie", "vi"), ("vi", "vi"),
     ]
     for raw, expected in test_cases:
         assert normalize_language_code(raw) == expected

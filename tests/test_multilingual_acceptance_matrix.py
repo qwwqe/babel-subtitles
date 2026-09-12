@@ -55,7 +55,8 @@ ALL_LANGUAGE_SAMPLES = {
     "el": ("Greek", "ell", "Αυτή είναι μια εντελώς φυσική πρόταση στα ελληνικά που χρησιμοποιούμε για την επαλήθευση της ανίχνευσης γλώσσας στο σύστημα."),
     "sr": ("Serbian", "srp", "Ово је сасвим природна српска реченица коју користимо за тестирање превода и детекције језика у систему."),
     "hr": ("Croatian", "hrv", "Ovo je potpuno prirodna hrvatska rečenica koju koristimo za provjeru prijevoda i detekcije jezika u sustavu."),
-    "bs": ("Bosnian", "bos", "Ovo je sasvim prirodna bosanska rečenica koju koristimo za provjeru prevoda i detekcije jezika u sistemu.")
+    "bs": ("Bosnian", "bos", "Ovo je sasvim prirodna bosanska rečenica koju koristimo za provjeru prevoda i detekcije jezika u sistemu."),
+    "vi": ("Vietnamese", "vie", "Đây là một câu tiếng Việt hoàn toàn tự nhiên mà chúng tôi sử dụng để kiểm tra khả năng phát hiện ngôn ngữ của hệ thống.")
 }
 
 @pytest.mark.parametrize("code,data", list(ALL_LANGUAGE_SAMPLES.items()))

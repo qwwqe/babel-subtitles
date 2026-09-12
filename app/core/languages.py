@@ -36,7 +36,8 @@ LANGUAGES = [
     Language("el", ["ell", "gre", "greek", "ελληνικά", "ellinika"], "Greek", "EL"),
     Language("sr", ["srp", "scc", "serbian", "српски", "srpski"], "Serbian", "SR"),
     Language("hr", ["hrv", "scr", "croatian", "hrvatski"], "Croatian", "HR"),
-    Language("bs", ["bos", "bosnian", "bosanski"], "Bosnian", "BS")
+    Language("bs", ["bos", "bosnian", "bosanski"], "Bosnian", "BS"),
+    Language("vi", ["vie", "vnm", "vietnamese", "tiếng việt", "tieng viet", "việt nam", "vietnam", "vi-vn", "vi_vn"], "Vietnamese", "VI"),
 ]
 
 def get_language(query: str) -> Optional[Language]:
